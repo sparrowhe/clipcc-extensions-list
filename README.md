@@ -3,7 +3,7 @@
 This is the official repository of ClipCC Extensions List.
 
 This repository is used for save the extensions' open source repository link.
-
+aaa
 # Existed Extensions
 
 |Extension ID|Extension Name|Extension Author|Extension Repository|
