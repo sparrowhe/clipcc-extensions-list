@@ -1,0 +1,63 @@
+name: 添加扩展请求
+body:
+  - type: markdown
+    id: introduction
+    attributes:
+      value: |
+        欢迎向 ClipCC 提交您开发的扩展，请填写下面的表格来补充相关信息
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: 先决条件
+      options:
+        - label: |
+            我保证该扩展选用的开源协议不与所使用的依赖库冲突。
+          required: true
+        - label: |
+            我已在本扩展所需运行环境上测试过未发现明显问题。
+          required: true
+        - label: | 
+            我保证该扩展不会刻意对用户运行环境造成破坏
+          required: true
+        - label: | 
+            我保证该扩展不会获取用户Token等敏感信息
+          required: true
+  - type: checkboxes
+    id: prerequisites_community
+    attributes:
+      label: 先决条件（社区版扩展附加）
+      options:
+        - label: |
+            我保证该扩展不会修改社区内容
+          required: false
+        - label: |
+            我保证该扩展不访问未获授权的外部链接
+          required: false
+  - type: checkboxes
+    id: need_env
+    attributes:
+      label: 需要上线的环境
+      options:
+        - label: |
+            桌面版
+          required: false
+        - label: |
+            网页版
+          required: false
+        - label: |
+            社区版
+          required: false
+  - type: textarea
+    id: name
+    attributes:
+      label: 扩展名称
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 扩展介绍
+    validations:
+      required: true
+
+
